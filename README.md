@@ -123,6 +123,3 @@ To align with medallion architecture:
 MIT License. Free to use and extend.
 
 ---
-
-👉 Do you want me to also include a **Mermaid diagram** in the README that shows:
-**Ethereum → Python Producer → Unity Catalog Volume → Databricks (Delta)** ?
