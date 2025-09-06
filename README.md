@@ -2,10 +2,6 @@
 Streaming pipeline for Ethereum data
 Ethereum Streaming Producer
 
-Perfect 👍 thanks for clarifying — since your current script is a **Python producer** that polls Ethereum blocks and writes them as JSON to a **Unity Catalog Volume**, the README should directly explain that (instead of a full bronze → silver → gold pipeline). Here’s a **focused README.md** tailored to your exact code:
-
----
-
 # Ethereum Streaming Producer
 
 This project streams **Ethereum blocks** in near real time using [Web3.py](https://web3py.readthedocs.io/) and writes them as **raw JSON files** into a **Databricks Unity Catalog Volume**.
