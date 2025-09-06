@@ -50,7 +50,7 @@ The script polls for new blocks every **10 seconds**, fetches full block + trans
    Update the Unity Catalog volume path:
 
    ```python
-   output_dir = "/Volumes/ethereum_catalog/bronze/blocks/"
+   output_dir = "/Volumes/ethereum_catalog/raw/blocks/"
    ```
 
 3. **Run the script**
@@ -66,7 +66,7 @@ The script polls for new blocks every **10 seconds**, fetches full block + trans
    * Write them as JSON files in the volume:
 
      ```
-     /Volumes/ethereum_catalog/bronze/blocks/block_12345678.json
+     /Volumes/ethereum-catalog/ethereum/ethereum-volume/raw/blocks/block_12345678.json
      ```
 
 ---
@@ -99,14 +99,14 @@ A saved block file (`block_12345678.json`):
 To align with medallion architecture:
 
 * **Raw blocks (bronze):**
-  `/Volumes/ethereum_catalog/bronze/blocks/`
+  `/Volumes/ethereum-catalog/ethereum/ethereum-volume/raw/blocks/`
 
 * **Checkpoints (for streaming jobs):**
-  `/Volumes/ethereum_catalog/checkpoints/blocks/`
+  `/Volumes/ethereum-catalog/ethereum/ethereum-volume/checkpoints/blocks/`
 
 * **Silver / Gold (optional for later):**
-  `/Volumes/ethereum_catalog/silver/...`
-  `/Volumes/ethereum_catalog/gold/...`
+  `/Volumes/ethereum-catalog/ethereum/ethereum-volume/silver/...`
+  `/Volumes/ethereum-catalog/ethereum/ethereum-volume/gold/...`
 
 ---
 
